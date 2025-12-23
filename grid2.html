@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container{
+            display:grid ;
+            gap:10px ;
+            padding:10px ;
+        }
+        .item{
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+            .header { background: #ff9933; }
+.nav { background: #ffcc33; }
+.main { background: #ccff33; color: #333; }
+.sidebar { background: #3399ff; }
+.box1 { background: #3366cc; }
+.box2 { background: #6699ff; }
+.footer { background: #cccccc; color: #333; }
+
+        @media(min-width: 789px){
+            .container{
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "item header"
+                "item nav"
+                "item main"
+                "item sidebar"
+                "item box1"
+                "item box2";
+            }
+        }
+        @media(min-width: 1024px){
+            .container{
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas: 
+                "header header header"
+                "nav nav nav"
+                "main main main"
+                "sidebar box1 box2"
+                "footer footer footer";
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="item header">header</header>
+        <nav class="item nav">Nav</nav>
+        <section class="item main">Main</section>
+        <aside class="item sidebar">Sidebar</aside>
+        <div class="item box1">box1</div>
+        <div class="item box2">box2</div>
+        <footer class="item footer">footer</footer>
+
+    </div>
+</body>
+</html>
