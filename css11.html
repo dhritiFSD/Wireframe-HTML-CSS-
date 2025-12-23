@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  line-height: 1.4;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+.nav-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #e50914;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.lang-select {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border: 1px solid #777;
+  padding: 5px;
+}
+.btn.signin {
+  background: #e50914;
+  border: none;
+  color: #fff;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://source.unsplash.com/random/1600x900?movie') center/cover no-repeat;
+  opacity: 0.5;
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.email-form {
+  display: flex;
+  width: 100%;
+}
+.email-form input {
+  flex: 1;
+  padding: 15px;
+  font-size: 1em;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+.email-form button {
+  padding: 15px 25px;
+  font-size: 1em;
+  background: #e50914;
+  border: none;
+  color: #fff;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+/* Features Section */
+.features {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.feature {
+  margin-bottom: 40px;
+}
+.feature h2 {
+  font-size: 2em;
+  margin-bottom: 12px;
+}
+.feature p {
+  font-size: 1.1em;
+  color: #ddd;
+}
+
+/* Footer */
+.page-footer {
+  background: #141414;
+  padding: 40px 20px;
+  text-align: center;
+  color: #828282;
+}
+.footer-links a {
+  color: #828282;
+  text-decoration: none;
+  margin: 0 8px;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.lang-footer {
+  margin-top: 20px;
+}
+This gives y
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">Netflix</div>
+      <div class="nav-right">
+        <select class="lang-select">
+          <option>English</option>
+          <option>हिन्दी</option>
+        </select>
+        <button class="btn signin">Sign In</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1>Unlimited movies, TV shows and more.</h1>
+      <p>Watch anywhere. Cancel anytime.</p>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      <form class="email-form">
+        <input type="email" placeholder="Email address" required />
+        <button type="submit">Get Started ></button>
+      </form>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h2>Enjoy on your TV.</h2>
+      <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+    </div>
+    <div class="feature">
+      <h2>Download your shows to watch offline.</h2>
+      <p>Save your favorites easily and always have something to watch.</p>
+    </div>
+    <div class="feature">
+      <h2>Watch everywhere.</h2>
+      <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+    </div>
+  </section>
+
+  <footer class="page-footer">
+    <p>Questions? Call 000‑800‑919‑1742</p>
+    <div class="footer-links">
+      <a href="#">FAQ</a> | <a href="#">Help Center</a> | <a href="#">Privacy</a> | <a href="#">Terms</a>
+    </div>
+    <div class="lang-footer">
+      <select>
+        <option>English</option>
+        <option>हिन्दी</option>
+      </select>
+    </div>
+  </footer>
+</body>
+</html>
