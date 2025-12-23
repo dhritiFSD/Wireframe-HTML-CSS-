@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            color:white;
+        }
+        .head{
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:0px 0px;
+            background-color: rgb(40, 40, 76);
+            color: white;
+        }
+        .logo{
+            width: 150px;
+            float: left;
+            height: 50px;
+        }
+        .ull{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            display:inline;
+            margin-right: 15px;
+        }
+        .submit{
+            background-color: rgb(78, 167, 222);
+            border-bottom: white;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .left h1{
+            font-size: 3rem;
+            max-width: 800px;
+            margin: auto;
+            font-weight: bold;
+
+        }
+        .left p{
+            margin-top: 20px;
+            font-size: 1.2rem;
+         
+        }
+        .left button{
+            padding-left: 50px;
+        }
+        .btn{
+            margin-top: 20px;
+            background-color: rgb(59, 171, 246);
+            margin-left: 200px;
+        }
+        button{
+            align-items:center;
+          
+        }
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 0;
+            padding-top: 0;
+
+        }
+        .img image{
+            width:500px;
+            margin:0;
+            padding: 0;
+            display: block;
+        }
+        .left{
+            padding-top: 150px;
+            float: left;
+        }
+        .img{
+            float: right;
+            padding-top: 0;
+            
+            width: max-content;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSZsHexlfvuw3MRGOzNqeG8G1dS9TnUmPZcQCkFm4JSBMUWBpHTtLbPPIw-94Y1svXqfI&usqp=CAU" class="logo"></image>
+        <ul class="ull">
+            <li>Home</li>
+            <li>Store</li>
+            <li>Chanales</li>
+            <li>Categeries</li>
+            <li>my stuff</li>
+        </ul>
+        <button class="submit">Try for free</button>
+    </div>
+    <div class="second">
+        <div class="left">
+            <h1>Welcome to Prime Video</h1>
+            <p>Join prime to watch latest mnovie,TV shows and award winning Amazon originals</p>
+            <div>
+                <button type="submit" class="btn">Start your 30-day free trial</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="img">
+            <image src="https://assets.aboutamazon.com/dims4/default/805effa/2147483647/strip/false/crop/1920x1080+0+0/resize/1486x836!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F2d%2F49%2Fabd3719b41aea4605bb51e4d8d72%2Fsubs-pre-order-consent-background-image-cb578173463.jpg"></image></div>
+        </div>
+
+    </div>
+</body>
+</html>
